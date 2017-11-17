@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>数据绑定</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	</head>
+
+	<body>
+
+		<script src="js/jquery-1.12.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+//			$.ajax({
+//				"type": "POST",
+//				"url": "api/api_user.php",
+//				"data": {
+//					"status": "register",
+//					"username": "lzr",
+//					"password": "123456"
+//				},
+//				"dataType": "json",
+//				"success": function(response) {
+//					console.log(response);
+//				}
+//			});
+						$.ajax({
+							"type":"POST",
+							"url":"api/api_user.php",
+							"data":{
+								"status":"login",
+								"username":"gsf",
+								"password":"123456"
+							},
+							"dataType":"json",
+							"success":function(response){
+								console.log(response);
+							}
+						});
+		</script>
+	</body>
+
+</html>
